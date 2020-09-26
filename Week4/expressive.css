@@ -1,23 +1,43 @@
-html, body {
-	margin:20;
-	top:0;
-	left:0;
-font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-font-size: 14px;
-letter-spacing: 2px;
-word-spacing: 2px;
-color: #000000;
-font-weight: normal;
-text-decoration: none;
-font-style: normal;
-font-variant: normal;
-text-transform: none;
-}
-
 p {
   text-align: center;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
 }
-	span {
-    font-size:16px;
-    font-weight:bold;
-    }
+
+.myClass
+{
+	font-size: 20px;
+	color: white;
+}
+
+.blue
+{
+	color: lightblue;
+}
+
+.Name
+{
+	color: white;
+	font-size: 14px;
+	font-family: 'Homemade Apple', cursive;
+	letter-spacing: 3px;
+}
+
+.bigger
+{
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+	letter-spacing: -1px;
+}
+
+.squeeze
+{
+	font-size: 18px;
+	font-family: 'Playfair Display', serif;
+	letter-spacing: -3px;
+}
+
+.mini
+{
+	font-size: 10px
+}
