@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+.container {
+	display: grid;
+	grid-template-columns: [column1-start] 25% [column1-end][column2-start] 25% [column2-end][column3-start] 25% [colunmn3-end][column4-start] 25% [column4-end];
+	grid-template-rows: [row1-start] 12.5% [row1-end] [row2-start] 12.5% [row2-end] [row3-start] 12.5% [row3-end] [row4-start] 12.5% [row4-end] [row5-start] 12.5% [row5-end] [row6-start] 12.5% [row6-end] [row7-start] 12.5% [row7-end] [row8-start] 12.5% [row8-end];
+}
+
+.item-a {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1-start;
+	grid-row-end: 4;
+}
+
+.item-b {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 5;
+	grid-row-end: 8;
+}
+
+.item-c {
+	grid-column-start: 4;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+.item-d {
+	grid-column-start: 4;
+	grid-column-end: 4;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+</style>
+</head>
+
+<body>
+	<div class="container">
+<h1 class="item-a"> pro </h1>
+<h2 class="item-b"> tion </h2>
+<h3 class="item-c"> por </h3>
+<h4 class="item-d"> pro </h4>
+
+	</div>
+</body>
+
+</html>
