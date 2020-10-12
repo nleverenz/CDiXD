@@ -1,0 +1,140 @@
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 50vw 50vw;
+	grid-row: auto auto;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+}
+
+.navigation {
+	grid-column: 1/2;
+}
+
+.navigation img {
+	position: absolute;
+	width: 1227px;
+	height: 42px;
+	left: 106px;
+	top: 74px;
+}
+
+.button img {
+	position: absolute;
+	width: 130px;
+	height: 94px;
+	left: 1213px;
+	top: 650px;
+}
+
+.frame img {
+	position: absolute;
+	width: 1385px;
+	height: 750px;
+	left: 27px;
+	top: 36px;
+	margin-bottom: 2rem;
+}
+
+.unicorn {
+	grid-column: 1/1;
+	grid-row: 2/2;
+	background: url("EImg.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 437px;
+	height: 602px;
+	left: 251px;
+	top: 130px;
+}
+
+@-webkit-keyframes Unicorn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes Unicorn1 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes Unicorn2 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes Unicorn3 {
+  0%   { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+.unicorn {
+  -webkit-animation: Unicorn 5s infinite; /* Safari 4+ */
+  -moz-animation:    Unicorn1 5s infinite; /* Fx 5+ */
+  -o-animation:      Unicorn2 5s infinite; /* Opera 12+ */
+  animation:         Unicorn3 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+.base {
+background: url(EBase.png);
+grid-column: 2/2;
+grid-row: 2/2;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-size: contain;
+position: absolute;
+width: 378.97px;
+height: 108.67px;
+left: 773.89px;
+top: 500px;
+}
+
+.moon {
+background: url(EMoonieD.png);
+grid-column: 2/2;
+grid-row: 2/2;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-size: contain;
+position: absolute;
+width: 375px;
+height: 154.44px;
+left: 770px;
+top: 345px;
+}
+
+@-webkit-keyframes Moonie {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes Moonie1 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes Moonie2 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes Moonie3 {
+  0%   { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+.moon {
+  -webkit-animation: Moonie 5s infinite; /* Safari 4+ */
+  -moz-animation:    Moonie1 5s infinite; /* Fx 5+ */
+  -o-animation:      Moonie2 5s infinite; /* Opera 12+ */
+  animation:         Moonie3 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+
