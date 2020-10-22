@@ -1,0 +1,55 @@
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+
+.Nav {
+	background: url("Nav.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 1024px;
+	height: 83px;
+	left: 0px;
+	top: 0px;
+}
+
+.Air {
+	background: url("E3.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 1020px;
+	height: 478px;
+	left: 2px;
+	top: 83px;
+}
+
+.Vac {
+	background: url("E2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 1024px;
+	height: 512px;
+	left: 0px;
+	top: 561px;
+}
+
+@media screen and (max-width:767px){
+	.Nav {
+	background: url("Nav.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width:100%;
+	height:60%;
+	margin-bottom:0.5%;
+	}
+
+}
