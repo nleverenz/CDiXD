@@ -182,6 +182,7 @@ li a:hover {
   height: 47px;
   padding-left: 1127px;
   top: 416px;
+  z-index: 1;
 }
 
 #Pearl:hover {
@@ -198,6 +199,7 @@ li a:hover {
   top: 920px;
   transform-origin: 50% 50%;
   transition: all 1s;
+  z-index: 1;
 }
 
 #Lilies:hover {
