@@ -1,305 +1,299 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: Optima;
+  font-family: Optima;
 }
 
 .Container {
-	display: flex;
-	flex: 40%;
-	min-height: 100vh;
-	max-width: 490px;
+  display: flex;
+  flex: 40%;
+  min-height: 100vh;
+  max-width: 490px;
 }
 
 .Container2 {
-	display: flex;
-	flex: 60%;
-	height:100%;
+  display: flex;
+  flex: 60%;
+  height:100%;
 }
 
 .Navigation {
-	display: flex;
-	flex: 40%;
-	flex-direction: column;
-	width: 490px;
-	height: 100%;
-	margin-top: 115px;
-	margin-left: 100px;
+  display: flex;
+  flex: 40%;
+  flex-direction: column;
+  width: 490px;
+  height: 100%;
+  margin-top: 115px;
+  margin-left: 100px;
 }
 
 h1 {
-	font-family: Optima;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 36px;
-	line-height: 44px;
-	width: 243px;
-	height: 81px;
-	left: 114px;
-	top: 114px;
-	margin-bottom: 70px;
+  font-family: Optima;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  width: 243px;
+  height: 81px;
+  left: 114px;
+  top: 114px;
+  margin-bottom: 70px;
 }
 
 .h2 {
-	font-family: Optima;
-	font-style: italic;
-	font-weight: normal;
-	font-size: 14px;
+  font-family: Optima;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .h3 {
-	font-family: Optima;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	color: black;
-	line-height: 110px;
+  font-family: Optima;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: black;
+  line-height: 110px;
 }
 
 .h3:hover {
-	background-color: black;
-	color: white;
+  background-color: black;
+  color: white;
 }
 
 ul {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	justify-content: space-around;
-	position: fixed;
-	margin-top: 152px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-around;
+  position: fixed;
+  margin-top: 152px;
 }
 
 a {
-	text-decoration: none;
-	color: gray;
-	font-size: 24px;
-	line-height: 40px;
+  text-decoration: none;
+  color: gray;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 li a:hover {
-	color: gold;
-	font-weight: bold;
+  color: gold;
+  font-weight: bold;
 }
 
 .Home {
-	background: url(Home.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width: 949px;
-	height: 800px;
-	left: 490px;
-	top: 10px;
+  background: url(Home.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 949px;
+  height: 800px;
+  left: 490px;
+  top: 10px;
 }
 
 .C1 {
-	background: url(C1.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width: 949px;
-	height: 780px;
-	left: 490px;
-	top: 870px;
+  background: url(C1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 949px;
+  height: 780px;
+  left: 490px;
+  top: 870px;
 }
 
 .C2 {
-	background: url(C2.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width: 949px;
-	height: 800px;
-	left: 490px;
-	top: 1730px;
+  background: url(C2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 949px;
+  height: 800px;
+  left: 490px;
+  top: 1730px;
 }
 
 .C3 {
-	background: url(C3.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width: 949px;
-	height: 800px;
-	left: 490px;
-	top: 2580px;
+  background: url(C3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 949px;
+  height: 800px;
+  left: 490px;
+  top: 2580px;
 }
 
 .C4 {
-	background: url(C4.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width: 949px;
-	height: 800px;
-	left: 490px;
-	top: 3440px;
+  background: url(C4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 949px;
+  height: 800px;
+  left: 490px;
+  top: 3440px;
 }
 
 .C5 {
-	background: url(C5.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width: 949px;
-	height: 800px;
-	left: 490px;
-	top: 4300px;
+  background: url(C5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 949px;
+  height: 800px;
+  left: 490px;
+  top: 4300px;
 }
 
 .C6 {
-	background: url(C6.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width: 949px;
-	height: 800px;
-	left: 490px;
-	top: 5170px;
+  background: url(C6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 949px;
+  height: 800px;
+  left: 490px;
+  top: 5170px;
 }
 
 .C7 {
-	background: url(C7.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: absolute;
-	width: 949px;
-	height: 800px;
-	left: 490px;
-	top: 6020px;
+  background: url(C7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 949px;
+  height: 800px;
+  left: 490px;
+  top: 6020px;
 }
 
 .Pearl {
-	position: absolute;
-	width: 47px;
-	height: 47px;
-	padding-left: 1127px;
-	top: 416px;
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  padding-left: 1127px;
+  top: 416px;
 }
 
 #Pearl:hover {
-	stroke: white;
-	stroke-width: .14em;
-	cursor: pointer;
+  stroke: white;
+  stroke-width: .14em;
+  cursor: pointer;
 }
 
 .Lilies {
-	position: absolute;
-	width: 582px;
-	height: 641.28px;
-	left: 634px;
-	top: 920px;
-	transform-origin: 50% 50%;
-	transition: all 1s;
+  position: absolute;
+  width: 582px;
+  height: 641.28px;
+  left: 634px;
+  top: 920px;
+  transform-origin: 50% 50%;
+  transition: all 1s;
 }
 
 #Lilies:hover {
-	fill: white;
-	opacity: 50%;
-	cursor: pointer;
-	transform: scale(0.5);
+  fill: white;
+  opacity: 50%;
+  cursor: pointer;
+  transform: scale(0.5);
 }
 
 .Cutout {
-	position: absolute;
-	width: 132.62px;
-	height: 188px;
-	left: 900px;
-	top: 2030px;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  position: absolute;
+  width: 132.62px;
+  height: 188px;
+  left: 900px;
+  top: 2030px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 #Cutout:hover {
-	fill:orange;
-	cursor: pointer;
+  fill:orange;
+  cursor: pointer;
 }
 
 .Dots {
-	position: absolute;
-	width: 810px;
-	height: 514px;
-	left: 566px;
-	top: 2700px;
+  position: absolute;
+  width: 810px;
+  height: 514px;
+  left: 566px;
+  top: 2700px;
 }
 
 #Dots:hover {
-	fill: black;
-	opacity: 100%;
-	cursor: pointer;
+  fill: black;
+  opacity: 100%;
+  cursor: pointer;
 }
 
 .Crown {
-	position: absolute;
-	width: 235px;
-	height: 164.5px;
-	padding-left: 604px;
-	top: 3485px;
+  position: absolute;
+  width: 235px;
+  height: 164.5px;
+  padding-left: 604px;
+  top: 3485px;
 }
 
 #Crown:hover {
-	fill: none;
-	stroke: gold;
-	stroke-width: .1em;
-	cursor: pointer;
+  fill: none;
+  stroke: gold;
+  stroke-width: .1em;
+  cursor: pointer;
 }
 
 .Orange {
-	position: absolute;
-	width: 48px;
-	height: 82px;
-	left: 1050px;
-	top: 4390px;
+  position: absolute;
+  width: 48px;
+  height: 82px;
+  left: 1050px;
+  top: 4390px;
 }
 
 #Orange:hover {
-	fill: orange;
+  fill: orange;
 }
 
 #OrangeLeaf:hover {
-	fill: white;
+  fill: white;
 }
 
 .Star {
-	position: absolute;
-	width: 806px;
-	height: 437px;
-	left: 500px;
-	top: 5200px;
+  position: absolute;
+  width: 806px;
+  height: 437px;
+  left: 500px;
+  top: 5200px;
 }
 
 #Star:hover {
-	fill: white;
-	stroke: gold;
-	stroke-width: .2em;
+  fill: white;
+  stroke: gold;
+  stroke-width: .2em;
 }
 
 .Can {
-	position: absolute;
-	width: 93px;
-	height: 154px;
-	left: 1167px;
-	top: 6252px;
+  position: absolute;
+  width: 93px;
+  height: 154px;
+  left: 1167px;
+  top: 6252px;
 }
 
 .Can:Hover {
-	opacity: 0%;
+  opacity: 0%;
 }
-
-
-
-
-
-
