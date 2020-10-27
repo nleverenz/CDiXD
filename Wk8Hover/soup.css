@@ -180,15 +180,15 @@ li a:hover {
   position: absolute;
   width: 47px;
   height: 47px;
-  padding-left: 1127px;
+  left: 1127px;
   top: 416px;
-  z-index: 1;
 }
 
 #Pearl:hover {
-  stroke: white;
-  stroke-width: .14em;
+  stroke: black;
+  stroke-width: .1em;
   cursor: pointer;
+  fill: white;
 }
 
 .Lilies {
@@ -199,7 +199,6 @@ li a:hover {
   top: 920px;
   transform-origin: 50% 50%;
   transition: all 1s;
-  z-index: 1;
 }
 
 #Lilies:hover {
