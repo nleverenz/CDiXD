@@ -15,12 +15,6 @@ body {
   max-width: 490px;
 }
 
-.Container2 {
-  display: flex;
-  flex: 60%;
-  height:100%;
-}
-
 .Navigation {
   display: flex;
   flex: 40%;
