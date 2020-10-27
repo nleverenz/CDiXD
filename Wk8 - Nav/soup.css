@@ -1,0 +1,173 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Optima;
+}
+
+.Container {
+	display: flex;
+	min-height: 100vh;
+	max-width: 490px;
+}
+
+.Navigation {
+	display: flex;
+	flex: 40%;
+	flex-direction: column;
+	width: 490px;
+	height: 100%;
+	margin-top: 115px;
+	margin-left: 100px;
+}
+
+h1 {
+	font-family: Optima;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 44px;
+	width: 190px;
+	height: 81px;
+	left: 114px;
+	top: 114px;
+	margin-bottom: 70px;
+}
+
+.h2 {
+	font-family: Optima;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: black;
+	line-height: 110px;
+}
+
+.h2:hover {
+	background-color: black;
+	color: white;
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	justify-content: space-around;
+	position: fixed;
+	margin-top: 152px;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+li a:hover {
+	color: gold;
+	font-weight: bold;
+}
+
+.Home {
+	background: url(Home.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 949px;
+	height: 800px;
+	left: 490px;
+	top: 10px;
+}
+
+.C1 {
+	background: url(C1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 949px;
+	height: 780px;
+	left: 490px;
+	top: 870px;
+}
+
+.C2 {
+	background: url(C2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 949px;
+	height: 800px;
+	left: 490px;
+	top: 1730px;
+}
+
+.C3 {
+	background: url(C3.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 949px;
+	height: 800px;
+	left: 490px;
+	top: 2580px;
+}
+
+.C4 {
+	background: url(C4.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 949px;
+	height: 800px;
+	left: 490px;
+	top: 3440px;
+}
+
+.C5 {
+	background: url(C5.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 949px;
+	height: 800px;
+	left: 490px;
+	top: 4300px;
+}
+
+.C6 {
+	background: url(C6.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 949px;
+	height: 800px;
+	left: 490px;
+	top: 5170px;
+}
+
+.C7 {
+	background: url(C7.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 949px;
+	height: 800px;
+	left: 490px;
+	top: 6020px;
+}
+
+
+
+

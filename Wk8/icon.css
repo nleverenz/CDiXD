@@ -1,0 +1,83 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Optima;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
+}
+
+.text {
+	flex: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 11%;
+}
+
+.picture {
+	flex: 60%;
+	background-image: url("dots.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	height: 10%
+	justify-content: space-around;
+	font-size: 1.7rem;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(145, 145, 145);
+}
+
+.yellow:active, 
+.yellow:focus {
+	color: gold;
+}
+
+.red:active,
+.red:focus {
+	color: red;
+}
+
+.orange:active,
+.orange:focus {
+	color: orange;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+.icon1:hover {
+	fill: black;
+}
+
+.icon2:hover {
+	fill: blue;
+}
+
+.icon3:hover {
+	opacity: 30%;
+}
