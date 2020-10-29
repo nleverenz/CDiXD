@@ -12,3 +12,12 @@ h1 {
 .placeholder {
 	font-family: Bodoni
 }
+
+#shape {
+background: url(ghost.png);
+background-size: contain;
+background-repeat: no-repeat;
+position: absolute;
+width: 229px;
+height: 229px;
+}
