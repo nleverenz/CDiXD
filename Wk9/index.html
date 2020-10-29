@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="challenge.css">
+</head>
+
+<body>
+<h1>On October 31st...</h1>
+<input placeholder='Enter your name' type="text" name="name">
+<div id="message"> </div>
+<input placeholder='My costume is...' type="text" name="costume">
+<div id='cos'> </div>
+<input placeholder='Trick or Treat?' type="text" name="treat">
+<div id='trick'> </div>
+</body>
+
+<script>
+let name = document.querySelector('input[name="name"]')
+let message = document.querySelector('#message')
+let costume = document.querySelector('input[name="costume"')
+let cos = document.querySelector('#cos')
+let treat = document.querySelector('input[name="treat"')
+let trick = document.querySelector('#trick')
+
+console.log(name)
+console.log(message)
+console.log(costume)
+console.log(cos)
+console.log(trick)
+console.log(treat)
+
+name.onchange=function(){
+	message.innerHTML="Have a Happy Halloween " + name.value + "!"
+}
+
+costume.onchange=function(){
+	cos.innerHTML="You would look fantastic as a " + costume.value + "!"
+}
+
+treat.onchange=function(){
+	cos.innerHTML="You get a " + treat.value + "!"
+}
+
+
+
+</script>
+
+</html>
