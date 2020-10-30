@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>In Good Spirit...</title>
+	<title>In Good Spirits...</title>
 	<script type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="challenge.css">
 </head>
@@ -14,6 +14,7 @@
 <div id='cos'></div>
 <input placeholder='Trick or Treat?' type="text" name="treat">
 <div id='trick'></div>
+<div id="circle"></div>
 <div id='shape'></div>
 
 </body>
@@ -24,6 +25,7 @@ let message = document.querySelector('#message')
 let costume = document.querySelector('input[name="costume"]')
 let cos = document.querySelector('#cos')
 let treat = document.querySelector('input[name="treat"]')
+let circle = document.querySelector('#circle')
 let shape = document.querySelector('#shape')
 
 console.log(name)
@@ -32,6 +34,7 @@ console.log(costume)
 console.log(cos)
 console.log(trick)
 console.log(treat)
+console.log(circle)
 console.log(shape)
 
 
@@ -50,6 +53,24 @@ treat.onchange=function() {
 	} else {
 		trick.innerHTML='The children will now throw eggs on your door.'
 	}
+}
+
+circle.onclick=function(){
+	if(circle.style.backgroundColor=='orange'){
+		circle.style.backgroundColor='green'
+	} else {
+		circle.style.backgroundColor='green'
+	}
+}
+
+circle.onmouseover=function(){
+	circle.innerHTML='Bumpkin! :('
+	circle.style.width='5em'
+}
+
+circle.onmouseout=function(){
+	circle.innerHTML='Pumpkin! :)'
+	circle.style.width='3em'
 }
 
 shape.onmouseover=function(){
