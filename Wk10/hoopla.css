@@ -1,0 +1,16 @@
+body {
+	font-family: Helvetica Neue, sans-serif;
+}
+
+h1 {
+	display: inline-block;
+	margin: 2%;
+	padding: 1% 2%;
+}
+
+.option {
+	display: inline-block;
+	margin: 2%;
+	padding: 1% 2%;
+	border: 0.05em solid black;
+}
