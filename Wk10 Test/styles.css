@@ -1,0 +1,15 @@
+* {
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+h1 {
+	font-family: didot;
+	font-size: 1em;
+}
+
+#wow {
+  background-color: green;
+  border: none;
+  color: white;
+}
