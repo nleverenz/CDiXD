@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ho Ho Ho!</title>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@800&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width">
+</head>
+<style type="text/css">
+	html, body{
+		background-color:white;
+		top:0;
+		left:0;
+		margin:0;
+		height:100%;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		font-family: 'Baloo Bhaina 2', cursive;
+	}
+	#alert {
+		opacity:0;
+		position:absolute;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		left:auto;
+		width:100%;
+		height:100vh;
+		bottom:-100vh;
+		transition:0.5s cubic-bezier(0.6,.37,.64,.42);
+		cursor:pointer;
+	}
+	#alert h2 {
+		margin-top:10%;
+	}
+	.aligner {
+		width:30%;
+		color:white;
+		text-align:center;
+		border-radius:1em;
+		background-color:red;
+		border:0.2em solid red;
+		box-shadow:0em 0em 5em white;
+		transition:0.5s ease-in-out;
+	}
+	.aligner:hover {
+		border:0.2em solid white;
+	}
+	em {
+		display:block;
+		font-size:2em;
+		line-height:0.5em;
+		animation: 2s flash linear infinite;
+
+	}
+
+	}
+	.main {
+		width:100%;
+	}
+	.button {
+		width:8em;
+		height:8em;
+		font-size:2em;
+		border-radius:50%;
+		background-color: red;
+		box-shadow: 0.1em 0.1em 4em #F2357B;
+		color:white;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		border:0.05em solid red;
+		transition:0.25s ease-in-out;
+		animation:5s pulse ease-in-out infinite;
+		cursor:pointer;
+	}
+	.button:hover {
+		border:0.05em;
+		border-color: none;
+
+	}
+
+	button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: white;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+	@keyframes pulse {
+		0% {
+			transform:scale(1);
+		}
+		50%{
+			transform:scale(1.2);
+		}
+		100%{
+			transform:scale(1);
+		}
+	}
+	@keyframes flash {
+		0% {
+			color: #FF8D63;
+		}
+		25% {
+			color:#FFC049;
+		}
+		50% {
+			color: #BF265E;
+		}
+		100% {
+			color: #FF8D63;
+		}
+
+	}
+
+	.woosh {
+		height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	}
+
+
+	@media screen and (max-width:767px){
+		.aligner {
+			width:80%;
+			height:80vh;
+		}
+	}
+</style>
+<body>
+
+<div class='woosh'>
+<div class='main'>
+	<div class='button'>Hello December!</div>
+</div>
+</div>
+
+<div id="alert">
+	<div class='aligner'>
+		<h2>Happy<em>Holidays!<em></h2>
+		<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_vluuzzxp.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+	</div>
+</div>
+
+</body>
+<script type="text/javascript">
+
+button = document.querySelector('.button')
+alert = document.querySelector('#alert')
+
+button.onclick=function() {
+	alert.style.opacity='1'
+	alert.style.bottom='0'
+}
+
+alert.onclick=function() {
+	alert.style.opacity='0'
+	alert.style.bottom='-100vh'
+}
+
+	
+
+</script>
+</html>
