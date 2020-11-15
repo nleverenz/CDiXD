@@ -48,6 +48,13 @@ ok.addEventListener("click", function () {
     text.innerHTML = "You are the poet";
     ok.innerHTML = "Emperor";
     no.innerHTML = "Next";
+  }
+  if (ok.innerHTML == "Emperor") {
+    body.style.backgroundImage = "url('GB.png')";
+    body.style.backgroundSize = "cover";
+    text.innerHTML = "You are the Yellow Emperor";
+    ok.innerHTML = "Ok!";
+    no.innerHTML = "No";
   } else {
     grid.style.display = "grid";
     choice.style.display = "none";
@@ -56,7 +63,14 @@ ok.addEventListener("click", function () {
 });
 
 no.addEventListener("click", function () {
-  if (no.innerHTML == "Next") {
+  if (storyTextCounter == 3) {
+    body.style.backgroundImage = "url('GB.png')";
+    body.style.backgroundSize = "cover";
+    text.innerHTML = "You are the poet";
+    ok.innerHTML = "Emperor";
+    no.innerHTML = "Next";
+    storyTextCounter = 4;
+  } else if (no.innerHTML == "Next") {
     grid.style.display = "grid";
     choice.style.display = "none";
     header.style.display = "none";
@@ -113,18 +127,18 @@ function yeFunc(num) {
   no.innerHTML = "Next";
   if (num == 1) {
     storyTextCounter = 1;
-    console.log("Test");
   } else if (num == 2) {
     storyTextCounter = 2;
   } else if (num == 3) {
     storyTextCounter = 3;
   } else if (num == 4) {
     storyTextCounter = 4;
+    ok.innerHTML = "Emperor";
   } else if (num == 5) {
     storyTextCounter = 5;
+    ok.innerHTML = "Emperor";
   }
   text.innerHTML = storyText[storyTextCounter];
 }
 
 onStart();
-
