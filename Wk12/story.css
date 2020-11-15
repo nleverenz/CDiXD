@@ -163,6 +163,7 @@ background: url("GYE3.png");
 #ye5 {
 background: url("GYE5.png"); 
 background-size: cover;
+display: none;
 }
 
 #ye5:hover {
@@ -172,6 +173,7 @@ background-size: cover;
 
 #ye6 {
 background: url("GYE6.png");
+display: none;
 }
 
 #ye6:hover {

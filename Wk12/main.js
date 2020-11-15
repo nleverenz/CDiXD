@@ -1,8 +1,8 @@
 const grid = document.querySelector(".grid");
 const choice = document.querySelector(".choice");
 const header = document.querySelector("header");
-const ok = document.querySelector("#ok");
-const no = document.querySelector("#no");
+const leftButton = document.querySelector("#leftButton");
+const rightButton = document.querySelector("#rightButton");
 const yeb1 = document.querySelector("#yeb1");
 const yeb2 = document.querySelector("#yeb2");
 const yeb3 = document.querySelector("#yeb3");
@@ -41,20 +41,20 @@ function onStart() {
 }
 
 //Poet button
-ok.addEventListener("click", function () {
-  if (ok.innerHTML == "Poet") {
+leftButton.addEventListener("click", function () {
+  if (leftButton.innerHTML == "Poet") {
     body.style.backgroundImage = "url('GB.png')";
     body.style.backgroundSize = "cover";
     text.innerHTML = "You are the poet";
-    ok.innerHTML = "Emperor";
-    no.innerHTML = "Next";
+    leftButton.innerHTML = "Emperor";
+    rightButton.innerHTML = "Next";
   }
-  if (ok.innerHTML == "Emperor") {
-    body.style.backgroundImage = "url('GB.png')";
+  else if (leftButton.innerHTML == "Emperor") {
+    body.style.backgroundImage = "url('GYEB.png')";
     body.style.backgroundSize = "cover";
     text.innerHTML = "You are the Yellow Emperor";
-    ok.innerHTML = "Ok!";
-    no.innerHTML = "No";
+    leftButton.innerHTML = "Ok!";
+    rightButton.innerHTML = "No";
   } else {
     grid.style.display = "grid";
     choice.style.display = "none";
@@ -62,15 +62,23 @@ ok.addEventListener("click", function () {
   }
 });
 
-no.addEventListener("click", function () {
+
+
+rightButton.addEventListener("click", function () {
   if (storyTextCounter == 3) {
     body.style.backgroundImage = "url('GB.png')";
     body.style.backgroundSize = "cover";
     text.innerHTML = "You are the poet";
-    ok.innerHTML = "Emperor";
-    no.innerHTML = "Next";
-    storyTextCounter = 4;
-  } else if (no.innerHTML == "Next") {
+    leftButton.innerHTML = "Emperor";
+    rightButton.innerHTML = "Next";
+    storyTextCounter = null;
+  } else if (rightButton.innerHTML == "Next") {
+    if (leftButton.innerHTML == "Emperor") {
+      document.querySelector("#ye5").style.display = "block";
+      document.querySelector("#ye6").style.display = "block";
+      document.querySelector("#placeHolder1").style.display = "none";
+      document.querySelector("#placeHolder2").style.display = "none";
+    }
     grid.style.display = "grid";
     choice.style.display = "none";
     header.style.display = "none";
@@ -78,8 +86,8 @@ no.addEventListener("click", function () {
     body.style.backgroundImage = "url('GB.png')";
     body.style.backgroundSize = "cover";
     text.innerHTML = "You are the poet";
-    ok.innerHTML = "Emperor";
-    no.innerHTML = "Next";
+    leftButton.innerHTML = "Emperor";
+    rightButton.innerHTML = "Next";
   }
 });
 
@@ -123,8 +131,8 @@ function yeFunc(num) {
   header.style.display = "block";
   title.style.display = "none";
   fullBtn.style.display = "block";
-  ok.innerHTML = "Poet";
-  no.innerHTML = "Next";
+  leftButton.innerHTML = "Poet";
+  rightButton.innerHTML = "Next";
   if (num == 1) {
     storyTextCounter = 1;
   } else if (num == 2) {
@@ -133,10 +141,10 @@ function yeFunc(num) {
     storyTextCounter = 3;
   } else if (num == 4) {
     storyTextCounter = 4;
-    ok.innerHTML = "Emperor";
+    leftButton.innerHTML = "Emperor";
   } else if (num == 5) {
     storyTextCounter = 5;
-    ok.innerHTML = "Emperor";
+    leftButton.innerHTML = "Emperor";
   }
   text.innerHTML = storyText[storyTextCounter];
 }
