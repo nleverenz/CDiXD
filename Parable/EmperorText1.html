@@ -13,14 +13,21 @@
 <body class="B-Img-Emperor-Text">
     <section>
     <div id="Flex" class="Align">
-        <button id="TruthButton">The Full Story</button>
-        <p>On that day, the <b id="YE">Yellow Emperor</b> showed off his palace. In a long descent, they had just left the first western terraces, which – like the tiers of an <b>unimaginable</b> amphitheatre – slope down to a <b>paradise</b> whose metal mirrors and interwoven juniper hedges gave a hint of the labyrinth.</p>
-         <h2 id="StartText"><a href="EmperorText2.html">Next</a></h2>
+        <p class="Soup" id='HolyCow'>On that day, the <b id="Lightheartedly" onclick="myFunction()" id="YE">Yellow Emperor</b> showed off his palace. In a long descent, they had just left the first western terraces, which – like the tiers of an unimaginable amphitheatre – slope down to a paradise whose metal mirrors and interwoven juniper hedges gave a hint of the labyrinth.
+         <h2 id="StartText"><a href="EmperorGrid2.html">Next</a></h2>
          <h3 id="EmpTextNum"><b>1</b>&nbsp;&nbsp;&nbsp;<u id="PetiteNumbers">2&nbsp;&nbsp;&nbsp;3</u></h3>
 
     </div>
     </section>
+<script>
+    function myFunction(){
+        console.log('clicked');
 
+        var container = document.querySelector('#HolyCow');
+        container.innerHTML = `On that day, the <b onclick="myFunction()" id="YE">Yellow Emperor</b> showed off his palace <span id='opacity60'>to the poet</span>. In a long descent, they had just left the first western terraces, which – like the tiers of an <span id='opacity60'>almost</span> unimaginable amphitheatre – slope down to a paradise<span id='opacity60'>, or garden</span>, whose metal mirrors and interwoven juniper hedges gave a hint of the labyrinth.`;
+
+    }
+</script>
 </body>
 
 </html>

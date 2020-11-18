@@ -20,7 +20,7 @@
         <div></div>
         <div></div>
         <div></div>
-        <div id="PoetGrid1"><button id="BPoetGrid1"><a id="BG" href="PoetText1.html">1</a></button></div>
+        <div id="PoetGrid1"><button><a href="PoetText1.html">1</a></button></div>
         <div></div>
         <div id="PoetGrid2"><button id="BPoetGrid2"></button></div>
         <div></div>
@@ -37,5 +37,13 @@
         <div id="PoetGrid5"><button id="BPoetGrid5"></button></div>
         <div id="PoetGrid6"><button id="BPoetGrid6"></button></div>
       </section>
-<script type="text/javascript" src='tulip.js'></script>
+<script>
+    
+let PoetButton1 = document.querySelector('#PoetGrid1')
+
+PoetButton1.onclick=function(){
+    window.location="PoetText1.html"    
+}
+
+</script>
 </body>

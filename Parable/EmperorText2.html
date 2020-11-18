@@ -4,24 +4,30 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poet's Story: The Parable of the Palace</title>
+    <title>Emperor's Story: The Parable of the Palace</title>
     <link rel="stylesheet" type="text/css" href="parable.css"> 
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <section class="BackgroundGrid">
+<body class="B-Img-Emperor-Text">
+    <section>
     <div id="Flex" class="Align">
-        <img class="B-Img" src="ETextBImg.png"/>
-        <p><b>Lightheartedly</b>, the two men lost themselves in it – as if they were entering into a <b>game</b>. At about midnight, observation of the planets allowed them to extricate themselves from that whole sector, which seemed <b>enchanted</b>. After that, they passed through antechambers and courtyards and libraries and a hexagonal hall with a water clock.</p>
+        <img class="B-Img" class="B-Img-Emperor" src="ETextBImg.png"/>
+        <p class="Soup2" id="EmpStory2">Lightheartedly, the two men lost themselves in it – as if they were entering into a <b onclick="myFunction()" id="Lightheartedly">game</b>. At about midnight, observation of the planets allowed them to extricate themselves from that whole sector, which seemed enchanted.</p>
 
-        <h2 id="StartText"><a href="EmperorText3.html">Next</a></h2>
+        <h2 id="StartText" id="StartTextEmpM1"><a href="EmperorGrid3.html">Next</a></h2>
         <h3 id="EmpTextNum"><u id="PetiteNumbers">1</u>&nbsp;&nbsp;&nbsp;<b>2</b>&nbsp;&nbsp;&nbsp;<u id="PetiteNumbers">3</u></h3>
 
     </div>
     </section>
 
+<script>
+function myFunction(){
+        document.querySelector('#Lightheartedly').textContent = "game but later with a touch of unease";
+    }
+
+</script>
 </body>
 
 </html>

@@ -13,9 +13,19 @@
 <body>
     <div id="Flex" class="Align">
         <img class="B-Img" src="BIndexImg.png"/>
-        <p>It <em>seemed</em> impossible that the earth could be anything but gardens, watercourses, architectural structures, and resplendent shapes. Every hundred paces a tower soared into the air; to the eye, each was the same colour, but so long was the series and so subtle were the hues that the first of them was yellow and the last scarlet.</p>
+        <p id="HolyCow">At the foot of the second last tower the <b onclick="myFunction()" id="Poet">Poet</b>, who seemed detached from all these spectacles – marvels to everyone else – recited the short work that today we link inseparably with his name and that, according to the most elegant historians, bestowed immortality and death on him.</p>
+        <h2 id="StartText"><a href="PoetGrid2.html">Next</a></h2>
+        <h3 id="EmpTextNum"><b>1</b>&nbsp;&nbsp;&nbsp;<u id="PetiteNumbers">2&nbsp;&nbsp;&nbsp;3</u></h3>
     </div>
     </section>
+<script>
+    function myFunction(){
+        console.log('clicked');
+
+        var container = document.querySelector('#HolyCow');
+        container.innerHTML = `<span id='PoetOpac'>At the foot of the second last tower </span>the <b onclick="myFunction()" id="Poet">Poet</b><span id='PoetOpac'>, who seemed detached from all these spectacles – marvels to everyone else – </span>recited the short work that <span id='PoetOpac'>today we link inseparably with his name and that, according to the most elegant historians, </span>bestowed immortality and death<span id='PoetOpac'> on him.</span>`;
+    }
+</script>
 </body>
 
 </html>

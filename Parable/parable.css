@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 body, html {
-height: 100%;
+min-height: 100%;
 }
 
 /*Flex*/
@@ -28,154 +28,6 @@ background-repeat: no-repeat;
 background-position: center;
 background-image: url(BIndexImg.png);
 }
-
-/*Media Querie: Mobile*/
-@media (max-width: 480px) {
-
-.B-Img {
-background-position: center center; 
-background-attachment: fixed; 
-background-repeat: no-repeat; background-size: cover;
-background-image: url(BIndexMobile.png);
-position: relative;
-}
-
-.Question {
-position: fixed;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-line-height: 3rem;
-text-align: center;
-font-size: 80%;
-}
-
-a {
-text-decoration: none;
-color: white;
-}
-
-a:hover {
-filter: blur(1px);
-}
-
-#Reg {
-font-family: Playfair Display;
-font-weight: 400;
-color: white;
-}
-
-#YE {
-font-family: Playfair Display;
-font-weight: 600;
-color: #FFD057;
-}
-
-#Poet {
-font-family: Playfair Display;
-font-weight: 600;
-color: #FFF2D0;
-}
-
-/*Emperor Background Image*/
-
-.B-Img-Emperor {
-background-position: center center; 
-background-attachment: fixed; 
-background-repeat: no-repeat; background-size: cover;
-background-image: url(BEmpMobile.png);
-position: relative;
-}
-
-/*You are now the Yellow Emperor.*/
-h2 {
-position: fixed;
-top: 80%;
-color: white;
-font-family: Playfair Display;
-font-weight: 400;
-font-size: 1.5rem;
-}
-
-#Start {
-text-decoration: none;
-color: white;
-}
-
-#Arrow {
-position: fixed;
-top: 85%;
-}
-
-#Arrow:hover {
-filter: blur(1.5px);
-}
-
-/*Emperor Grid*/
-.EmpGrid {
-display: grid;
-grid-template-columns: repeat(6, 1fr);
-grid-auto-rows: minmax(25vh, auto);
-color: white;
-background: url("BMainImg.png");
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-}
-
-.EmpGrid div {
-border: .5px solid rgba(255,255,255, 0.2);
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: transparent;
-}
-
-.EmpGrid button {
-font-size: 6rem;
-color: white;
-background-color: transparent;
-border: none;
-width: 100%;
-height: 100%;
-font-family: Garamond;
-color: white;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-text-decoration: none;
-}
-
-/*Emperor Text*/
-.B-Img-Emperor-Text {
-background-position: center center; 
-background-attachment: fixed; 
-background-repeat: no-repeat; background-size: cover;
-background-image: url(BEmpMobile2.png);
-position: relative;
-}
-
-p {
-position: fixed;
-top: 10%;
-font-family: Playfair Display;
-font-style: normal;
-font-weight: 400;
-font-size: .5rem;
-line-height: 2.3rem;
-text-align: center;
-color: white;
-flex-direction: column;
-}
-
-#StartText {
-top: 85%;
-align-items: center;
-}
-
-}
-
-/***!! Media Querie: Web !!***/
-
-@media (min-width: 481px) {
 
 /*Emperor Background Image*/
 .B-Img-Emperor {
@@ -229,6 +81,10 @@ color: #FFD057;
 font-family: Playfair Display;
 font-weight: 600;
 color: #FFF2D0;
+}
+
+#Poet:hover {
+filter: blur(1px);
 }
 
 /*Next Page Indicators*/
@@ -300,6 +156,12 @@ cursor: pointer;
 filter: blur(1px);
 }
 
+#PoetGrid1-1 {
+background: url("PoetGridImg1.png"); 
+background-size: cover;
+filter: blur(1px);
+}
+
 #PoetGrid2 {
 background: url("PoetGridImg2.png"); 
 background-size: cover;
@@ -307,10 +169,31 @@ opacity: 80%;
 filter: blur(1px);
 }
 
+#PoetGrid2-2 {
+background: url("PoetGridImg2.png"); 
+background-size: cover;
+}
+
+#PoetGrid2-2:hover {
+background: url("PoetGridImg2.png"); 
+background-size: cover;
+opacity: 80%;
+filter: blur(1px);
+}
+
+#PoetGrid2-3 {
+background: url("PoetGridImg2.png"); 
+background-size: cover;
+filter: blur(1.5px);
+}
+
 #PoetGrid3 {
 background: url("PoetGridImg3.png"); 
 background-size: cover;
-opacity: 80%;
+}
+
+#PoetGrid3:hover {
+cursor: pointer;
 filter: blur(1px);
 }
 
@@ -369,6 +252,22 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 text-decoration: none;
 }
 
+#ByeGirl {
+filter: blur(2px);
+}
+
+#EmpGrid2:hover {
+cursor: pointer;
+filter: blur(1px);
+}
+
+#EmpGrid2 {
+background: url("PoetGridImg2.png"); 
+background-size: cover;
+}
+
+
+
 /*General Text Styles*/
 
 p {
@@ -388,6 +287,8 @@ color: white;
 #StartText {
 top: 80%;
 align-items: center;
+justify-content: space-around;
+display: inline-block;
 }
 
 #EmpTextNum {
@@ -404,15 +305,58 @@ opacity: 60%;
 text-decoration: none;
 }
 
-#TruthButton {
-font-family: Helvetica Neue;
-font-weight: 200;
-top: 20%;
-position: fixed;
+/*Emperor Text 1*/
+
+#Palace {
+opacity: 65%;
 }
 
-/*General Text Styles*/
+#Palace:hover {
+filter: blur(1px);
+}
 
+/*Emperor Text 2*/
 
+#Lightheartedly {
+opacity: 65%;
+color: #FFD057;
+}
+
+#Lightheartedly:hover {
+filter: blur(1px);
+}
+
+#opacity60{
+opacity: 65%;
+font-weight: bold;
+}
+
+#opacity60:hover{
+opacity: 5%;
+font-weight: bold;
+}
+
+#PoetOpac{
+opacity: 20%;
+font-weight: 400;
+}
+
+/*JS Text*/
+
+#HolyCow {
+display: inline-block;
+width: 100%;
+height: 100%;
+position: fixed;
+padding-left: 10%;
+padding-right: 10%;
+font-family: Playfair Display;
+font-style: normal;
+font-weight: 400;
+font-size: 1.3rem;
+line-height: 2.3rem;
+text-align: center;
+color: white;
+overflow: auto;
 }
 
