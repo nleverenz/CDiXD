@@ -1,0 +1,166 @@
+/*Media Query: Mobile*/
+@media (max-width: 480px) {
+
+.B-Img {
+background-position: center center; 
+background-attachment: fixed; 
+background-repeat: no-repeat; background-size: cover;
+background-image: url(BIndexMobile.png);
+position: relative;
+}
+
+.Question {
+position: fixed;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+line-height: 3rem;
+text-align: center;
+font-size: 80%;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+
+a:hover {
+filter: blur(1px);
+}
+
+#Reg {
+font-family: Playfair Display;
+font-weight: 400;
+color: white;
+}
+
+#YE {
+font-family: Playfair Display;
+color: #FFD057;
+}
+
+#Poet {
+font-family: Playfair Display;
+font-weight: 600;
+color: #FFF2D0;
+}
+
+.Soup {
+font-size: 16px;
+padding-top: 10%;
+padding-left: 6%;
+padding-right: 6%;
+}
+
+#EmpTextNum {
+color: transparent;
+}
+
+.Soup2 {
+font-size: 16px;
+padding-top: 2%;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.ET2 {
+background: url(BEmpMobile2.png);
+position: relative;
+background-position: center center; 
+background-attachment: fixed; 
+background-repeat: no-repeat; background-size: cover;
+}
+
+/*Emperor Background Image*/
+
+.B-Img-Emperor {
+background-position: center center; 
+background-attachment: fixed; 
+background-repeat: no-repeat; background-size: cover;
+background-image: url(BEmpMobile.png);
+position: relative;
+}
+
+/*You are now the Yellow Emperor.*/
+h2 {
+position: fixed;
+padding-bottom: 
+color: white;
+font-family: Playfair Display;
+font-weight: 400;
+font-size: 1.5rem;
+}
+
+#Start {
+text-decoration: none;
+color: white;
+}
+
+#StartTextEmpM1 {
+padding-bottom: 5%;
+}
+
+/*Emperor Grid*/
+.EmpGrid {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-auto-rows: minmax(25vh, auto);
+color: white;
+background: url("BMainImg.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.EmpGrid div {
+border: .5px solid rgba(255,255,255, 0.2);
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: transparent;
+}
+
+.EmpGrid button {
+font-size: 6rem;
+color: white;
+background-color: transparent;
+border: none;
+width: 100%;
+height: 100%;
+font-family: Garamond;
+color: white;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+text-decoration: none;
+}
+
+/*Emperor Text*/
+.B-Img-Emperor-Text {
+background-position: center center; 
+background-attachment: fixed; 
+background-repeat: no-repeat; background-size: cover;
+background-image: url(BEmpMobile2.png);
+position: relative;
+}
+
+p {
+position: fixed;
+top: 10%;
+font-family: Playfair Display;
+font-style: normal;
+font-weight: 400;
+font-size: .5rem;
+line-height: 2.3rem;
+text-align: center;
+color: white;
+flex-direction: column;
+}
+
+}
+
+/***!! Media Querie: Web !!***/
+
+@media (min-width: 481px) {
+
+
+
+}
