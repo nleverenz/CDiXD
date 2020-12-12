@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Navbar -->
+      <nav class="numbertext">
+        <h1>Name</h1>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Info</a></li>
+          </ul>
+      </div>
+      </nav>
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img
+          src="DP101276.jpg"
+          style="width: 100%; height: 100vh"
+        />
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          style="width: 100%; height: 100vh"
+        />
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          style="width: 100%; height: 100vh"
+        />
+        <div class="text">Caption Three</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+
+    <!-- The dots/circles -->
+    <div class="dots" style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <section>
+      <div class="g-heading">
+        <h1>Selected Works</h1>
+        <p>A collection of my projects</p>
+      </div>
+
+      <ul class="g-links">
+        <li id="all-tag">All</li>
+        <li>|</li>
+        <li id="see-tag">See</li>
+        <li>|</li>
+        <li id="play-tag">Play</li>
+        <li>|</li>
+        <li id="read-tag">Read</li>
+      </ul>
+
+      <div class="grid-wrapper">
+        <div class="g-item"></div>
+        <div class="g-item"></div>
+        <div class="g-item"></div>
+        <div class="g-item"></div>
+        <div class="g-item"></div>
+        <div class="g-item"></div>
+        <div class="g-item"></div>
+        <div class="g-item"></div>
+        <div class="g-item"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="left">
+        <h1>Let's Talk</h1>
+        <p>Keep in touch. Leave your name, email and a message.</p>
+        <form>
+          <div>
+            <input type="text" placeholder="Enter your name" />
+            <input type="text" placeholder="Enter your email" />
+          </div>
+
+          <textarea cols="30" rows="10" placeholder="Type a message"></textarea>
+          <input type="submit" />
+        </form>
+      </div>
+      <div class="right">
+        <h3><a href="#">Back To Top.</a></h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint illum
+          dolores facere inventore asperiores odio! Tempora, reiciendis facilis
+          sed, temporibus, eveniet ducimus quibusdam provident facere deleniti
+          assumenda nam voluptatum delectus.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
