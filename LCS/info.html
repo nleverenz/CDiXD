@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Living Collection | Info</title>
+  <link rel="stylesheet" href="finals.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="see.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<nav>
+  <a href="index.html"><div class="livingcollection" style="color:black;">NANCY</div></a>
+  <ul class="centernav">
+  <li> </li>
+  </ul>
+
+  <ul class="sidenav">
+  <li><a href="#1" style="color:black;">WORKS</a></li>
+  <li><a href="" style="color:black;">INFO</a></li>
+  </ul>
+</nav>
+</div>
+
+
+<section id="project-detail">
+<div class="container1">
+<div id="title"><a id="white" name="1">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<h2>&#128105;&#127995;</h2>
+<p>I'm Nancy, a Communication design student at Parsons. This website is a project for my Fall 2020 interaction class. My projects are divided into three categories: See (visuals), Play (interactive), and Read (written content).</p><br><hr><br><br>
+
+<h2>Let's Talk</h2>
+<p>Keep in touch. Fill out the form below or email me at hun254@newschool.edu</p>
+<br>
+<div class="typeform-widget" data-url="https://form.typeform.com/to/lqh712NI?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+<br><br><br><br><hr><br><br>
+
+<p id="babynav"><a id="linker" href="index.html">LET'S GO HOME</a></p>
+
+</div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+//Functions
+const allTag = document.querySelector("#all-tag");
+const seeTag = document.querySelector("#see-tag");
+const playTag = document.querySelector("#play-tag");
+const readTag = document.querySelector("#read-tag");
+const gItem = document.querySelectorAll(".square");
+const gridp = document.querySelectorAll('.grid-p')
+const div1 = document.querySelector('#div-1')
+
+let options = document.querySelectorAll('.option')
+  post1 = document.querySelector('#post1')
+  post2 = document.querySelector('#post2')
+  post3 = document.querySelector('#post3')
+  post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+    
+  item.onclick=function() {
+    id=item.id
+    console.log(id)
+    split = id.split('option')
+    console.log(split)
+    ref = split[1]
+    console.log(ref)
+    console.log('click')
+    element = document.querySelector('#post'+ref)
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+})
+
+//Functions
+function hide() {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "none";
+  }
+}
+
+//Event listeners
+allTag.addEventListener("click", () => {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "grid";
+  }
+});
+
+seeTag.addEventListener("click", () => {
+  hide();
+  gItem[1].style.display = "grid";
+  gItem[2].style.display = "grid";
+  gItem[3].style.display = "grid";
+  gItem[8].style.display = "grid";
+});
+
+playTag.addEventListener("click", () => {
+  hide();
+  gItem[4].style.display = "grid";
+  gItem[5].style.display = "grid";
+  gItem[6].style.display = "grid";
+});
+
+readTag.addEventListener("click", () => {
+  hide();
+  gItem[0].style.display = "grid";
+  gItem[7].style.display = "grid";
+});
+
+
+
+
+
+</script>

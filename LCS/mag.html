@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Living Collection | CREATIVE ASSIGNMENT </title>
+  <link rel="stylesheet" href="finals.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="see.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<nav>
+  <div class="livingcollection"><a href="index.html">NANCY</a></div> 
+  <ul class="centernav">
+  <li> </li>
+  </ul>
+
+  <ul class="sidenav">
+  <li><a href="index.html#1">WORKS</a></li>
+  <li><a href="info.html">INFO</a></li>
+  </ul>
+</nav>
+</div>
+
+<header class="header">
+      <h1 class="animated fadeIn">
+      <a id="white" href="#1">OBJECTS IN PERSPECTIVES</a>
+      </h1>
+    </header>
+
+<section>
+<div id='main'>
+  <div class='featured' id='post1'>
+    <img src="Slider/H1.png">
+</div>
+</section>
+
+<section id="project-detail">
+<div class="container1">
+<div id="title"><a id="white" name="1">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<div id="title">One Object, Three Perpectives</div>
+<p id="nonlinker">CD CREATIVE ASSIGNMENT</p></a>
+<br><hr><br>
+<p>Task: Select an everyday object. Think about how our backgrounds affect the way we look at it. For example, an engineer might want to dismantle it; a scientist might put it under water to see what would happen; a child might use it to stamp a pattern. Pick three ways of reading or using the object - ranging from scientific to experimental - and document them.</p><br><hr><br><br>
+
+<h3>OBJECT CHOICE: MAGAZINE</h3>
+
+<img src="ProjectImg/O1.png" class="img-responsive" alt="">
+<h4>PERSPECTIVE OF THE ANTHROPOLOGIST</h4>
+<p>In the 1960s, Eros made its debut as an American magazine covering the topics of love, intimacy, and sex. This was the brainchild of editor Ralph Ginzburg and iconic graphic designer Herb Lubalin. After a few issues, Ginzburg was indicted and later imprisoned for obscenity. The magazine received thousands of complaints for showing partial nudity, love scenes from the Bible, and interracial intimacy. Here, I created a series of cultural artifacts showing Eros Magazine juxtaposed with a contemporary Vogue magazine. 50 and some years later, the same thins that were once condemned are now celebrated. </p>
+<br><br>
+
+<img src="ProjectImg/O2.png" class="img-responsive" alt="">
+<h4>PERSPECTIVE OF THE GIRL</h4>
+<p>How can I look like <em>her?</em> Magazines promote this image of the ideal woman: long lashes, plump lips, and unblemished skin. Using scraps of beauty editorials I found in magazines, I created a series of masks. This has become the new normal; we have entered into the era of photoshop, niptucks, copy and paste to change our faces into the ideal.</p>
+<br><br>
+
+<img src="ProjectImg/O3.png" class="img-responsive" alt="">
+<h4>PERSPECTIVE OF THE FILMMAKER</h4>
+<p>I created film reels showing three of the most reported events in the last 50 years.
+<br><br>
+1. The love triange of JFK, Marilyn Monroe, and Jackie O.
+<br><br>
+2. The evolution of Princess Diana.
+<br><br>
+3. The gruesome murder of Sharon Tate, golden girl of Hollywood cinema.</p>
+<br><br><br><br><hr><br><br>
+
+<p id="babynav"><a id="linker" href="santa.html">PREVIOUS PROJECT</a> &nbsp; | &nbsp; <a id="linker" href="index.html">HOME</a></p>
+
+</div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+//Functions
+const allTag = document.querySelector("#all-tag");
+const seeTag = document.querySelector("#see-tag");
+const playTag = document.querySelector("#play-tag");
+const readTag = document.querySelector("#read-tag");
+const gItem = document.querySelectorAll(".square");
+const gridp = document.querySelectorAll('.grid-p')
+const div1 = document.querySelector('#div-1')
+
+let options = document.querySelectorAll('.option')
+  post1 = document.querySelector('#post1')
+  post2 = document.querySelector('#post2')
+  post3 = document.querySelector('#post3')
+  post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+    
+  item.onclick=function() {
+    id=item.id
+    console.log(id)
+    split = id.split('option')
+    console.log(split)
+    ref = split[1]
+    console.log(ref)
+    console.log('click')
+    element = document.querySelector('#post'+ref)
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+})
+
+//Functions
+function hide() {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "none";
+  }
+}
+
+//Event listeners
+allTag.addEventListener("click", () => {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "grid";
+  }
+});
+
+seeTag.addEventListener("click", () => {
+  hide();
+  gItem[1].style.display = "grid";
+  gItem[2].style.display = "grid";
+  gItem[3].style.display = "grid";
+  gItem[8].style.display = "grid";
+});
+
+playTag.addEventListener("click", () => {
+  hide();
+  gItem[4].style.display = "grid";
+  gItem[5].style.display = "grid";
+  gItem[6].style.display = "grid";
+});
+
+readTag.addEventListener("click", () => {
+  hide();
+  gItem[0].style.display = "grid";
+  gItem[7].style.display = "grid";
+});
+
+
+
+
+
+</script>

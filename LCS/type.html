@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Living Collection</title>
+  <link rel="stylesheet" href="finals.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="see.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<nav>
+  <div class="livingcollection"><a href="index.html">NANCY</a></div> 
+  <ul class="centernav">
+  <li> </li>
+  </ul>
+
+  <ul class="sidenav">
+  <li><a href="index.html#1">WORKS</a></li>
+  <li><a href="info.html">INFO</a></li>
+  </ul>
+</nav>
+</div>
+
+<header class="header">
+      <h1 class="animated fadeIn">
+      <a id="white" href="#1">TYPOGRAPHY</a>
+      </h1>
+    </header>
+
+<section>
+<div id='main'>
+  <div class='featured' id='post1'>
+    <img src="Slider/TY1.png">
+</div>
+</section>
+
+<section id="project-detail">
+<div class="container1">
+<div id="title"><a id="white" name="1">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<div id="title">TYPE PROJECTS</div>
+<audio  autoplay loop>
+ <source src="type.mp3"  type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+<p id="nonlinker"><em>PSSST!</em> TURN SOUND <em><b>ON</b></em> TO LISTEN TO SOME FAST-PACED TYPING.</p>
+<br><hr><br>
+<p>Here are a few projects I created for my Fall 2020 Typography class.</p>
+<br>
+<h4>EXPRESSIVE MEANING THROUGH FONT CHOICE AND LETTER SPACING</h4>
+<img src="ProjectImg/TY2.png" class="img-responsive" alt="">
+<br><br>
+<h4>FUTURA TYPE SPECIMEN, FRONT AND BACK.</h4>
+<img src="ProjectImg/TY3.png" class="img-responsive" alt="">
+<br><br>
+<h4>FUTURA TYPE SPECIMEN, INSIDE.</h4>
+<img src="ProjectImg/TY4.png" class="img-responsive" alt="">
+<br><br>
+<h4><em>THE ART OF NOISES</em> MANIFESTO.</h4>
+<img src="ProjectImg/TY5.png" class="img-responsive" alt="">
+<br><br><br><hr><br><br>
+<h3>KACHUNK! VOOMAROOMA!</h3>
+<p>Don Martin words are sound effects created by Don Martin, beloved American cartoonist. Two of my favorites are "<b>kachunk</b>", the sound of a prince jumping onto Rapunzel's hair, and "<b>voomarooma</b>", the sound of a man going downhill in a two-wheel device. For this project, I used Gill Sans, Futura, and Helvetica.</p>
+<br><br>
+<h4>DON MARTIN WORDS PROJECT</h4>
+<img src="ProjectImg/TY1.png" class="img-responsive" alt="">
+<br><br><br><br><hr><br><br>
+<p id="babynav"><a id="linker" href="tapestry.html">PREVIOUS PROJECT</a> &nbsp; | &nbsp; <a id="linker" href="parable.html">NEXT PROJECT</a></p>
+
+</div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+//Functions
+const allTag = document.querySelector("#all-tag");
+const seeTag = document.querySelector("#see-tag");
+const playTag = document.querySelector("#play-tag");
+const readTag = document.querySelector("#read-tag");
+const gItem = document.querySelectorAll(".square");
+const gridp = document.querySelectorAll('.grid-p')
+const div1 = document.querySelector('#div-1')
+
+let options = document.querySelectorAll('.option')
+  post1 = document.querySelector('#post1')
+  post2 = document.querySelector('#post2')
+  post3 = document.querySelector('#post3')
+  post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+    
+  item.onclick=function() {
+    id=item.id
+    console.log(id)
+    split = id.split('option')
+    console.log(split)
+    ref = split[1]
+    console.log(ref)
+    console.log('click')
+    element = document.querySelector('#post'+ref)
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+})
+
+//Functions
+function hide() {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "none";
+  }
+}
+
+//Event listeners
+allTag.addEventListener("click", () => {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "grid";
+  }
+});
+
+seeTag.addEventListener("click", () => {
+  hide();
+  gItem[1].style.display = "grid";
+  gItem[2].style.display = "grid";
+  gItem[3].style.display = "grid";
+  gItem[8].style.display = "grid";
+});
+
+playTag.addEventListener("click", () => {
+  hide();
+  gItem[4].style.display = "grid";
+  gItem[5].style.display = "grid";
+  gItem[6].style.display = "grid";
+});
+
+readTag.addEventListener("click", () => {
+  hide();
+  gItem[0].style.display = "grid";
+  gItem[7].style.display = "grid";
+});
+
+
+
+
+
+</script>

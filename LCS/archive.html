@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Living Collection | VISUAL ARCHIVE </title>
+  <link rel="stylesheet" href="finals.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="see.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<nav>
+  <div class="livingcollection"><a href="index.html">NANCY</a></div> 
+  <ul class="centernav">
+  <li> </li>
+  </ul>
+
+  <ul class="sidenav">
+  <li><a href="index.html#1">WORKS</a></li>
+  <li><a href="info.html">INFO</a></li>
+  </ul>
+</nav>
+</div>
+
+<header class="header">
+      <h1 class="animated fadeIn">
+      <a id="white" href="#1">THE VISUAL ARCHIVE</a>
+      </h1>
+    </header>
+
+<section>
+<div id='main'>
+  <div class='featured' id='post1'>
+    <img src="Slider/V1.png">
+</div>
+</section>
+
+<section id="project-detail">
+<div class="container1">
+<div id="title"><a id="white" name="1">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<div id="title">Object(ive) Intimacy</div>
+<p id="nonlinker">CRITICAL INQUIRY AND VISUAL RESEARCH</p></a>
+<br><hr><br>
+<p>The goal of a visual archive is to explore the relationship between form and content: How is meaning constructed and communicated through visual language? Through observing, collectin, analyzing, writing, and form making, our task is to apply design processes involving visual research, concept generation, and craft skills.</p>
+<h4>THE MASK</h4>
+<a href="https://gyazo.com/cba9ac778d64c3f6f008b2cf8ec74da0"><img src="https://i.gyazo.com/cba9ac778d64c3f6f008b2cf8ec74da0.gif" alt="Image from Gyazo" width="1000"/></a>
+<br><br><br>
+<p>Object(ive) Intimacy is an archive documenting the relationship between object and owner. This collection displays 100 personal belongings embedded with physical traces of myself, sharing the candid stories of journeys taken together. The intention of this archive is to investigate how objects become an extension of identity.</p>
+<br><br><br><br><hr><br><br>
+<h3>SPREADS</h3>
+<p>Here are a few sample spreads from my archive.</p>
+<h4>DISPOSABLE OBJECT</h4>
+<img src="ProjectImg/V1.png" class="img-responsive" alt="">
+<br><br>
+<h4>CHANGING OBJECT</h4>
+<img src="ProjectImg/V2.png" class="img-responsive" alt="">
+<br><br>
+
+<br><br><br><br><hr><br><br>
+<p id="babynav"><a id="linker" href="motif.html">PREVIOUS PROJECT</a> &nbsp; | &nbsp; <a id="linker" href="santa.html">NEXT PROJECT</a></p>
+
+</div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+//Functions
+const allTag = document.querySelector("#all-tag");
+const seeTag = document.querySelector("#see-tag");
+const playTag = document.querySelector("#play-tag");
+const readTag = document.querySelector("#read-tag");
+const gItem = document.querySelectorAll(".square");
+const gridp = document.querySelectorAll('.grid-p')
+const div1 = document.querySelector('#div-1')
+
+let options = document.querySelectorAll('.option')
+  post1 = document.querySelector('#post1')
+  post2 = document.querySelector('#post2')
+  post3 = document.querySelector('#post3')
+  post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+    
+  item.onclick=function() {
+    id=item.id
+    console.log(id)
+    split = id.split('option')
+    console.log(split)
+    ref = split[1]
+    console.log(ref)
+    console.log('click')
+    element = document.querySelector('#post'+ref)
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+})
+
+//Functions
+function hide() {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "none";
+  }
+}
+
+//Event listeners
+allTag.addEventListener("click", () => {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "grid";
+  }
+});
+
+seeTag.addEventListener("click", () => {
+  hide();
+  gItem[1].style.display = "grid";
+  gItem[2].style.display = "grid";
+  gItem[3].style.display = "grid";
+  gItem[8].style.display = "grid";
+});
+
+playTag.addEventListener("click", () => {
+  hide();
+  gItem[4].style.display = "grid";
+  gItem[5].style.display = "grid";
+  gItem[6].style.display = "grid";
+});
+
+readTag.addEventListener("click", () => {
+  hide();
+  gItem[0].style.display = "grid";
+  gItem[7].style.display = "grid";
+});
+
+
+
+
+
+</script>

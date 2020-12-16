@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Living Collection</title>
+  <link rel="stylesheet" href="finals.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<nav>
+  <div id="n" class="livingcollection">NANCY</div>
+  <ul class="centernav">
+  <li> </li>
+  </ul>
+
+  <ul class="sidenav">
+  <li id="n1"><a href="#1">WORKS</a></li>
+  <li id="n2"><a href="info.html">INFO</a></li>
+  </ul>
+</nav>
+</div>
+
+<header class="header">
+      <h1 class="animated fadeIn">
+      <a id="white" href="#1">THE LIVING COLLECTION</a>
+      </h1>
+    </header>
+
+<div id='main'>
+  <div class='featured' id='post1'>
+    <img src="Slider/H1.png">
+  </div>
+  <div class='featured' id='post2'>
+    <img src="Slider/H2.png">
+  </div>
+  <div class='featured' id='post3'>
+    <img src="Slider/H3.png">
+  </div>
+  <div class='featured' id='post4'>
+    <img src="Slider/H4.png">
+  </div>
+</div>
+
+<div id='selector'>
+  <div class='option' id='option1'></div>
+  <div class='option' id='option2'></div>
+  <div class='option' id='option3'></div>
+  <div class='option' id='option4'></div>
+</div>
+
+<div id="title"><a id="white" name="1">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<br>
+<br>
+<br>
+ <ul class="g-links">
+        <li id="all-tag">ALL WORKS</li>
+        <li>|</li>
+        <li id="see-tag">SEE</li>
+        <li>|</li>
+        <li id="play-tag">PLAY</li>
+        <li>|</li>
+        <li id="read-tag">READ</li>
+      </ul>
+<br>
+<br>
+<div id="title"><a id="white" name="">YOU FOUND THE SECRET MESSAGE!!</a></div>
+
+
+<a href="tapestry.html"><div class="square img_1-1"></div></a>
+
+<a href="type.html"><div class="square img_1-2"></div></a>
+
+<a href="parable.html"><div class="square img_1-3"></div></a>
+
+<a href="kusama.html"><div class="square img_2-1"></div></a>
+
+<a href="plant.html"><div class="square img_2-2"></div></a>
+
+<a href="motif.html"><div class="square img_2-3"></div></a>
+
+<a href="archive.html"><div class="square img_3-1"></div></a>
+
+<a href="santa.html"><div class="square img_3-2"></div></a>
+
+<a href="mag.html"><div class="square img_3-3"></div></a>
+
+<br>
+
+<div id="title"><a id="white" name="">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<div id="title"><a id="white" name="">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<div id="title"><a id="white" name="">YOU FOUND THE SECRET MESSAGE!!</a></div>
+
+<!--
+<footer>
+<div class="left">
+  <h1 id="title">LET'S TALK</h1>
+  <h2 id="subtitle">Keep in touch! Leave your name, email and a message.</h2>
+  
+<form>
+<div>
+  <input type="text" placeholder="Enter your name" />
+  <input type="text" placeholder="Enter your email" />
+  </div>
+  <textarea cols="30" rows="10" placeholder="Type a message"></textarea>
+  <input type="submit" />
+</form>
+</div>
+
+<div class="right">
+<h3 id="subtitle"><a href="#">Back To Top.</a></h3>
+<p>
+My name is Nancy. I am a Communication design student at Parsons. This website is a project for my Fall 2020 interaction class. My projects are divided into three categories: <em>See</em> (visuals), <em>Play</em> (interactive), and <em>Read</em> (written content).
+</p>
+</div>
+</footer>
+-->
+
+
+</body>
+
+<script type="text/javascript">
+
+//Functions
+const allTag = document.querySelector("#all-tag");
+const seeTag = document.querySelector("#see-tag");
+const playTag = document.querySelector("#play-tag");
+const readTag = document.querySelector("#read-tag");
+const gItem = document.querySelectorAll(".square");
+const gridp = document.querySelectorAll('.grid-p')
+const div1 = document.querySelector('#div-1')
+
+let options = document.querySelectorAll('.option')
+  post1 = document.querySelector('#post1')
+  post2 = document.querySelector('#post2')
+  post3 = document.querySelector('#post3')
+  post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+    
+  item.onclick=function() {
+    id=item.id
+    console.log(id)
+    split = id.split('option')
+    console.log(split)
+    ref = split[1]
+    console.log(ref)
+    console.log('click')
+    element = document.querySelector('#post'+ref)
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+})
+
+//Functions
+function hide() {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "none";
+  }
+}
+
+//Event listeners
+allTag.addEventListener("click", () => {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "grid";
+  }
+});
+
+seeTag.addEventListener("click", () => {
+  hide();
+  gItem[0].style.display = "grid";
+  gItem[1].style.display = "grid";
+  gItem[6].style.display = "grid";
+  gItem[8].style.display = "grid";
+});
+
+playTag.addEventListener("click", () => {
+  hide();
+  gItem[4].style.display = "grid";
+  gItem[5].style.display = "grid";
+  gItem[7].style.display = "grid";
+});
+
+readTag.addEventListener("click", () => {
+  hide();
+  gItem[2].style.display = "grid";
+  gItem[3].style.display = "grid";
+});
+
+
+
+
+
+</script>

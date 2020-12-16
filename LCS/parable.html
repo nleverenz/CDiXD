@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Living Collection</title>
+  <link rel="stylesheet" href="finals.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="see.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<nav>
+  <div class="livingcollection"><a href="index.html">NANCY</a></div> 
+  <ul class="centernav">
+  <li> </li>
+  </ul>
+
+  <ul class="sidenav">
+  <li><a href="index.html#1">WORKS</a></li>
+  <li><a href="info.html">INFO</a></li>
+  </ul>
+</nav>
+</div>
+
+<header class="header">
+      <h1 class="animated fadeIn">
+      <a id="white" href="#1">THE PARABLE OF THE PALACE</a>
+      </h1>
+    </header>
+
+<section>
+<div id='main'>
+  <div class='featured' id='post1'>
+    <img src="Slider/P1.png">
+</div>
+</section>
+
+<section id="project-detail">
+<div class="container1">
+<div id="title"><a id="white" name="1">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<div id="title">INTERACTIVE STORIES</div>
+<a href="https://nleverenz.github.io/CDiXD/Parable/index.html"><p id="linker">+ SEE THE LIVE SITE</p></a>
+<br><hr><br>
+<p>The Story I selected was <em>Parable of the Palace</em>. My interpretation of this text was the balance between myth as power and truth as destruction. In my design, I created two perspectives: The Yellow Emperor and The Poet. I divided the story into 6 sections, with each perspective containing 3 parts. I used a grid element as sort of a 'map' of each section and gave the background images of each perspective different saturations to further along the theme of cheery myth vs. darker reality.</p>
+<br>
+<h4>EMPEROR GRID</h4>
+<img src="ProjectImg/P1.png" class="img-responsive" alt="">
+<br><br>
+<h4>POET GRID</h4>
+<img src="ProjectImg/P2.png" class="img-responsive" alt="">
+<br><br><br><br><hr><br><br>
+<h3>THE EMPEROR'S STORY</h3>
+<p>I interpreted the Yellow Emperor as a figure that controls the narrative and cut certain elements of the story that did not support his myth of his palace being paradise. I then added an on click function within the certain words of the Emperor's story that changes the inner HTML to show the original text that I cut.</p>
+<br><br><br>
+<a href="https://gyazo.com/0b4d266e9441049fefb163c0a2775350"><img src="https://i.gyazo.com/0b4d266e9441049fefb163c0a2775350.gif" alt="Image from Gyazo" width="1000"/></a>
+<br><br><br><br><hr><br><br>
+<h3>THE POET'S STORY</h3>
+<p>For the poet, I added an on click function that made certain words disappear or fade away, highlighting how his words had the power to dismantle the illusion of the palace. The experience should be similar in whichever screen size as I tried out the flex box method to make my design responsive. My design is linear if the reader starts from the Yellow Emperor perspective, non-linear if they begin with the poet.</p>
+<br><br><br>
+<a href="https://gyazo.com/09a8ae954dc5ba2c692c99a9aa2ec479"><img src="https://i.gyazo.com/09a8ae954dc5ba2c692c99a9aa2ec479.gif" alt="Image from Gyazo" width="1000"/></a>
+<br><br><br><br><hr><br><br>
+<p id="babynav"><a id="linker" href="type.html">PREVIOUS PROJECT</a> &nbsp; | &nbsp; <a id="linker" href="kusama.html">NEXT PROJECT</a></p>
+
+</div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+//Functions
+const allTag = document.querySelector("#all-tag");
+const seeTag = document.querySelector("#see-tag");
+const playTag = document.querySelector("#play-tag");
+const readTag = document.querySelector("#read-tag");
+const gItem = document.querySelectorAll(".square");
+const gridp = document.querySelectorAll('.grid-p')
+const div1 = document.querySelector('#div-1')
+
+let options = document.querySelectorAll('.option')
+  post1 = document.querySelector('#post1')
+  post2 = document.querySelector('#post2')
+  post3 = document.querySelector('#post3')
+  post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+    
+  item.onclick=function() {
+    id=item.id
+    console.log(id)
+    split = id.split('option')
+    console.log(split)
+    ref = split[1]
+    console.log(ref)
+    console.log('click')
+    element = document.querySelector('#post'+ref)
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+})
+
+//Functions
+function hide() {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "none";
+  }
+}
+
+//Event listeners
+allTag.addEventListener("click", () => {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "grid";
+  }
+});
+
+seeTag.addEventListener("click", () => {
+  hide();
+  gItem[1].style.display = "grid";
+  gItem[2].style.display = "grid";
+  gItem[3].style.display = "grid";
+  gItem[8].style.display = "grid";
+});
+
+playTag.addEventListener("click", () => {
+  hide();
+  gItem[4].style.display = "grid";
+  gItem[5].style.display = "grid";
+  gItem[6].style.display = "grid";
+});
+
+readTag.addEventListener("click", () => {
+  hide();
+  gItem[0].style.display = "grid";
+  gItem[7].style.display = "grid";
+});
+
+
+
+
+
+</script>

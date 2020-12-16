@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Living Collection</title>
+  <link rel="stylesheet" href="finals.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="see.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<nav>
+  <div class="livingcollection"><a href="index.html">NANCY</a></div> 
+  <ul class="centernav">
+  <li> </li>
+  </ul>
+
+  <ul class="sidenav">
+  <li><a href="index.html#1">WORKS</a></li>
+  <li><a href="info.html">INFO</a></li>
+  </ul>
+</nav>
+</div>
+
+<header class="header">
+      <h1 class="animated fadeIn">
+      <a id="white" href="#1">TAPESTRY VIEWING ROOM</a>
+      </h1>
+    </header>
+
+<section>
+<div id='main'>
+  <div class='featured' id='post1'>
+    <img src="Slider/H2.png">
+  </div>
+  <div class='featured' id='post2'>
+    <img src="Slider/U1.png">
+  </div>
+  <div class='featured' id='post3'>
+    <img src="Slider/U2.png">
+  </div>
+  <div class='featured' id='post4'>
+    <img src="Slider/U3.png">
+  </div>
+</div>
+</section>
+
+<div id='selector'>
+  <div class='option' id='option1'></div>
+  <div class='option' id='option2'></div>
+  <div class='option' id='option3'></div>
+  <div class='option' id='option4'></div>
+</div>
+
+<section id="project-detail">
+<div class="container1">
+<div id="title"><a id="white" name="1">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<div id="title">THE HUNT OF THE UNICORN</div>
+<a href="https://nleverenz.github.io/CDiXD/Wk6/index.html"><p id="linker">+ SEE THE LIVE SITE</p></a>
+<br><hr><br>
+<p>This website was created for an exercise in designing a single page light and dark mode experience. For this project, I chose to create a digital viewing room for the iconic masterpiece from the late Middle Ages: the <em>Unicorn Tapestries</em>. I animated and stylized the layout to captivate the user's attention while paying homage to these incredible works of art.</p>
+<br>
+<h4>LIGHT MODE</h4>
+<img src="ProjectImg/U1.png" class="img-responsive" alt="">
+<br><br>
+<h4>DARK MODE</h4>
+<img src="ProjectImg/U2.png" class="img-responsive" alt="">
+<br><br><br><hr><br><br>
+<h3>COLOR PALETTE</h3>
+<p>My chosen color palette comes from the featured image <em>The Unicorn in Captivity</em>. I wanted to use colors from the source itself, so the viewer could experience the rich and beautiful tones of the woven tapestry, even when viewing from a screen.</p>
+<br><br><br>
+<img src="ProjectImg/U3.png" class="img-responsive" alt="">
+<br><br><br><br><hr><br><br>
+<h3>TYPE</h3>
+<p>It is speculated these tapestries were commissioned to celebrate a marriage. Medieval poets interpreted these works as a story of love and devotion. With this in mind, I chose a romantic display typeface for my design.</p>
+<br><br><br>
+<img src="ProjectImg/U4.png" class="img-responsive" alt="">
+<br><br><br><br><hr><br><br>
+<a href="type.html"><p id="linker">NEXT PROJECT</p></a>
+
+</div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+//Functions
+const allTag = document.querySelector("#all-tag");
+const seeTag = document.querySelector("#see-tag");
+const playTag = document.querySelector("#play-tag");
+const readTag = document.querySelector("#read-tag");
+const gItem = document.querySelectorAll(".square");
+const gridp = document.querySelectorAll('.grid-p')
+const div1 = document.querySelector('#div-1')
+
+let options = document.querySelectorAll('.option')
+  post1 = document.querySelector('#post1')
+  post2 = document.querySelector('#post2')
+  post3 = document.querySelector('#post3')
+  post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+    
+  item.onclick=function() {
+    id=item.id
+    console.log(id)
+    split = id.split('option')
+    console.log(split)
+    ref = split[1]
+    console.log(ref)
+    console.log('click')
+    element = document.querySelector('#post'+ref)
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+})
+
+//Functions
+function hide() {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "none";
+  }
+}
+
+//Event listeners
+allTag.addEventListener("click", () => {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "grid";
+  }
+});
+
+seeTag.addEventListener("click", () => {
+  hide();
+  gItem[1].style.display = "grid";
+  gItem[2].style.display = "grid";
+  gItem[3].style.display = "grid";
+  gItem[8].style.display = "grid";
+});
+
+playTag.addEventListener("click", () => {
+  hide();
+  gItem[4].style.display = "grid";
+  gItem[5].style.display = "grid";
+  gItem[6].style.display = "grid";
+});
+
+readTag.addEventListener("click", () => {
+  hide();
+  gItem[0].style.display = "grid";
+  gItem[7].style.display = "grid";
+});
+
+
+
+
+
+</script>

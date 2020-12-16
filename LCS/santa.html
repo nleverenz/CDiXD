@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Living Collection | Operation Santa </title>
+  <link rel="stylesheet" href="finals.css">
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="see.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<nav>
+  <div class="livingcollection"><a href="index.html">NANCY</a></div> 
+  <ul class="centernav">
+  <li> </li>
+  </ul>
+
+  <ul class="sidenav">
+  <li><a href="index.html#1">WORKS</a></li>
+  <li><a href="info.html">INFO</a></li>
+  </ul>
+</nav>
+</div>
+
+<header class="header">
+      <h1 class="animated fadeIn">
+      <a id="white" href="#1">OPERATION SANTA REDESIGN</a>
+      </h1>
+    </header>
+
+<section>
+<div id='main'>
+  <div class='featured' id='post1'>
+    <img src="Slider/H3.png">
+</div>
+</section>
+
+<section id="project-detail">
+<div class="container1">
+<div id="title"><a id="white" name="1">YOU FOUND THE SECRET MESSAGE!!</a></div>
+<div id="title">DEAR SANTA</div>
+<p id="nonlinker">UI DESIGN</p></a>
+<br><hr><br>
+<p>Dear Santa, is an app redesign for the USPS Operation Santa charitable giving program. Current donors are deterred by outdated holiday charity platforms with time consuming seasons and limited options. Dear Santa, is a single platform that supports people who would like to contribute to children in need during the holiday season.</p>
+<h4>SCREENS</h4>
+<img src="ProjectImg/S4.png" class="img-responsive" alt="">
+<br><br>
+<p>My design goals are to provide quick donation options, online letter adoption, direct delivery, intuitive sorting systems, push notification reminders, automatic tax refund receipts, real time proof of impact, group/corporate letter adoptions, and media outreach initiatives.</p>
+<h4>CLICK SANTA TO EXPLORE THE PROTOTYPE</h4>
+<p align="center>"><iframe width="375" height="667" src="https://xd.adobe.com/embed/6cac2b5e-4395-4035-9ec3-ff9ac11f72c4-39ff/" frameborder="0" allowfullscreen></iframe></p>
+<br><br><br><br><hr><br><br>
+<h3>COLOR PALETTE</h3>
+<p>My chosen palette features bright, charming, and cheerful hues. The brand attributes I came up with in the brainstorming stage were about capturing the positive, hopeful, and celebratory aspects that emphasize the spirit of the holiday season.</p>
+<br><br><br>
+<img src="ProjectImg/S1.png" class="img-responsive" alt="">
+<br><br><br><br><hr><br><br>
+<h3>TYPE</h3>
+<p>For my design, I prioritized legibility and simplicity. I chose two sans serif typefaces: Overpass and Alegreya Sans. For titling, I used Overpass (Bold) in 24 pt. For body text I used Alegreya Sans (Regular) in 16 pt.</p>
+<img src="ProjectImg/S2.png" class="img-responsive" alt="">
+<br><br><br><br><hr><br><br>
+<h3>MOODBOARDS</h3>
+<p>In my initial brainstorming, I created a series of moodboards to develop my design.</p>
+<br><br><br>
+<img src="ProjectImg/S3.png" class="img-responsive" alt="">
+<br><br>
+
+<br><br><br><br><hr><br><br>
+<p id="babynav"><a id="linker" href="archive.html">PREVIOUS PROJECT</a> &nbsp; | &nbsp; <a id="linker" href="mag.html">NEXT PROJECT</a></p>
+
+</div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</body>
+
+<script type="text/javascript">
+
+//Functions
+const allTag = document.querySelector("#all-tag");
+const seeTag = document.querySelector("#see-tag");
+const playTag = document.querySelector("#play-tag");
+const readTag = document.querySelector("#read-tag");
+const gItem = document.querySelectorAll(".square");
+const gridp = document.querySelectorAll('.grid-p')
+const div1 = document.querySelector('#div-1')
+
+let options = document.querySelectorAll('.option')
+  post1 = document.querySelector('#post1')
+  post2 = document.querySelector('#post2')
+  post3 = document.querySelector('#post3')
+  post4 = document.querySelector('#post4')
+
+options.forEach(item=>{
+    
+  item.onclick=function() {
+    id=item.id
+    console.log(id)
+    split = id.split('option')
+    console.log(split)
+    ref = split[1]
+    console.log(ref)
+    console.log('click')
+    element = document.querySelector('#post'+ref)
+    element.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+})
+
+//Functions
+function hide() {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "none";
+  }
+}
+
+//Event listeners
+allTag.addEventListener("click", () => {
+  for (let i = 0; i < gItem.length; i++) {
+    gItem[i].style.display = "grid";
+  }
+});
+
+seeTag.addEventListener("click", () => {
+  hide();
+  gItem[1].style.display = "grid";
+  gItem[2].style.display = "grid";
+  gItem[3].style.display = "grid";
+  gItem[8].style.display = "grid";
+});
+
+playTag.addEventListener("click", () => {
+  hide();
+  gItem[4].style.display = "grid";
+  gItem[5].style.display = "grid";
+  gItem[6].style.display = "grid";
+});
+
+readTag.addEventListener("click", () => {
+  hide();
+  gItem[0].style.display = "grid";
+  gItem[7].style.display = "grid";
+});
+
+
+
+
+
+</script>

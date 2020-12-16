@@ -1,0 +1,72 @@
+p {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  color: black;
+  line-height: 1.5rem;
+}
+
+a {
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
+h3 {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.05em;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  color: gray;
+  font-size: .3rem;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+}
+
+#project-detail img {
+  border-radius: 1px;
+  width: 100%;
+}
+
+.container1 {
+  padding: 102px 82px;
+  min-height: 400px;
+}
+
+#linker {
+	font-size: .3rem;
+	line-height: 2rem;
+	font-weight: 600;
+	letter-spacing: .1rem;
+}
+
+#linker:hover {
+	opacity: 50%;
+	color: black;
+}
+
+#nonlinker {
+  font-size: .3rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+}
+
+#writ {
+  text-align: left;
+
+}
+
+/*YOOP!*/
+
+
+
