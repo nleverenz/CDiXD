@@ -240,18 +240,6 @@ header:hover {
     background-size:cover; 
 }
 
-.img_1-1{background-image:url('grid/G1.png');}
-.img_1-2{background-image:url('grid/G2.png');}
-.img_1-3{background-image:url('grid/G3.png');}
-
-.img_2-1{background-image:url('grid/G4.png');}
-.img_2-2{background-image:url('grid/G5.png');}
-.img_2-3{background-image:url('grid/G6.png');}
-
-.img_3-1{background-image:url('grid/G7.png');}
-.img_3-2{background-image:url('grid/G8.png');}
-.img_3-3{background-image:url('grid/G9.png');}
-
 /*PORTFOLIO HOVER*/
 
 .square:after {
