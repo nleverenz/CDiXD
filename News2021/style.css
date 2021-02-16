@@ -1,0 +1,78 @@
+* {
+	scroll-behavior: smooth;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explorer */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+
+body {
+  background-image: url("IMG/Home-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*H-NAV*/
+
+.nav {
+	padding-top: 4px;
+	padding-bottom: 1%;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: transparent;
+}
+
+.nav1 {
+	text-decoration: none;
+	float: left;
+	margin-top: 2%;
+	margin-left: 6%;
+	color: black;
+	background-color: transparent;
+}
+
+.nav1:hover {
+	opacity: 60%;
+}
+
+.nav2 {
+	text-decoration: none;
+	float: right;
+	margin-top: 2%;
+	margin-right: 6%;
+	color: black;
+	background-color: transparent;
+}
+
+.nav2:hover {
+	opacity: 60%;
+}
+
+/*BODY-CONTAINER*/
+
+.container1 {
+  padding: 5% 30%;
+  min-height: 400px;
+}
+
+#project-detail img {
+  border-radius: 1px;
+  width: 100%;
+}
+
+/*TEXT*/
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	text-align: center;
+}
+
+/*IMAGES*/
+
+
